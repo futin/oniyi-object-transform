@@ -1,0 +1,43 @@
+{
+  "name": "oniyi-object-transform",
+  "version": "0.0.0",
+  "description": "offers simple transformations for object literals",
+  "homepage": "",
+  "author": {
+    "name": "Benjamin Kroeger",
+    "email": "benjamin.kroeger@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "oniyi",
+    "object-transform",
+    "transformation",
+    "transform"
+  ],
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-oniyi": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nsp": "^2.3.1",
+    "gulp-plumber": "^1.1.0"
+  },
+  "repository": "benkroeger/oniyi-object-transform",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}
