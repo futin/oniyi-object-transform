@@ -1,7 +1,7 @@
 'use strict';
 
-var assert = require('assert');
-var oniyiObjectTransform = require('../lib');
+const assert = require('assert');
+const transform = require('../lib');
 
 describe('oniyi-object-transform', function () {
   it('should have unit test!', function () {
