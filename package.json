@@ -19,7 +19,7 @@
     "transform"
   ],
   "devDependencies": {
-    "eslint": "^2.9.0",
+    "eslint": "^2.10.2",
     "eslint-config-oniyi": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-coveralls": "^0.1.4",
@@ -28,7 +28,7 @@
     "gulp-istanbul": "^0.10.4",
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^2.2.0",
-    "gulp-nsp": "^2.4.0",
+    "gulp-nsp": "^2.4.1",
     "gulp-plumber": "^1.1.0"
   },
   "repository": "benkroeger/oniyi-object-transform",
@@ -38,7 +38,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "lodash": "^4.11.2",
+    "lodash": "^4.13.1",
     "oniyi-logger": "^0.4.2"
   },
   "engines": {
