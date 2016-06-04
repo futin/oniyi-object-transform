@@ -19,7 +19,7 @@
     "transform"
   ],
   "devDependencies": {
-    "eslint": "^2.10.2",
+    "eslint": "^2.11.1",
     "eslint-config-oniyi": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-coveralls": "^0.1.4",
