@@ -6,9 +6,7 @@ const transform = require('../lib');
 describe('oniyi-object-transform', function () {
   it('should throw when called without params argument', function () {
     assert.throws(
-      () => {
-        transform();
-      },
+      transform,
       /params argument is required/
     );
   });
@@ -56,5 +54,19 @@ describe('oniyi-object-transform pick', function () {
     assert(Object.keys(transformed).length === 1, 'we expect `transformed` to only have one property');
     assert(transformed.hasOwnProperty('foo'), 'we expect `transformed` to have own property `foo`');
     assert.equal(transformed.foo, source.foo, 'we expect `transformed.foo` to equal `souroce.foo`');
+  });
+
+  it('should return empty object literal when `pick` param is empty array', function () {
+    const source = {
+      foo: 'bar',
+      lorem: 'ipsum',
+    };
+
+    const transformed = transform({
+      source,
+      pick: [],
+    });
+
+    assert(Object.keys(transformed).length === 0, 'we expect `transformed` to have zero properties');
   });
 });
