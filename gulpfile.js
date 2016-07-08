@@ -9,26 +9,26 @@ const nsp = require('gulp-nsp');
 const plumber = require('gulp-plumber');
 const coveralls = require('gulp-coveralls');
 
-gulp.task('static', () => {
-  return gulp.src('**/*.js')
-    .pipe(excludeGitignore())
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
+gulp.task('static', () =>
+  gulp.src('**/*.js')
+  .pipe(excludeGitignore())
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError())
+);
 
 gulp.task('nsp', (cb) => {
   nsp({ package: path.resolve('package.json') }, cb);
 });
 
-gulp.task('pre-test', () => {
-  return gulp.src('lib/**/*.js')
-    .pipe(excludeGitignore())
-    .pipe(istanbul({
-      includeUntested: true,
-    }))
-    .pipe(istanbul.hookRequire());
-});
+gulp.task('pre-test', () =>
+  gulp.src('lib/**/*.js')
+  .pipe(excludeGitignore())
+  .pipe(istanbul({
+    includeUntested: true,
+  }))
+  .pipe(istanbul.hookRequire())
+);
 
 gulp.task('test', ['pre-test'], (cb) => {
   let mochaErr;
