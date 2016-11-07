@@ -19,8 +19,8 @@
     "transform"
   ],
   "devDependencies": {
-    "eslint": "^3.0.1",
-    "eslint-config-oniyi": "^3.0.1",
+    "eslint": "3.5.0",
+    "eslint-config-oniyi": "4.2.0",
     "gulp": "^3.9.1",
     "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^3.0.1",
@@ -38,10 +38,10 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "lodash": "^4.13.1",
-    "oniyi-logger": "^0.4.2"
+    "lodash": "4.15.0",
+    "oniyi-logger": "1.0.0"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   }
 }
