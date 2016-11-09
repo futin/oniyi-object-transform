@@ -29,10 +29,12 @@
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^2.2.0",
     "gulp-nsp": "^2.4.1",
-    "gulp-plumber": "^1.1.0"
+    "gulp-plumber": "^1.1.0",
+    "jsdoc-to-markdown": "^2.0.1"
   },
   "repository": "benkroeger/oniyi-object-transform",
   "scripts": {
+    "docs": "jsdoc2md lib/index.js > API.md",
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
