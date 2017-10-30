@@ -19,18 +19,13 @@
     "transform"
   ],
   "devDependencies": {
-    "eslint": "3.5.0",
-    "eslint-config-oniyi": "4.2.0",
-    "gulp": "^3.9.1",
-    "gulp-coveralls": "^0.1.4",
-    "gulp-eslint": "^3.0.1",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-mocha": "^2.2.0",
-    "gulp-nsp": "^2.4.1",
-    "gulp-plumber": "^1.1.0",
-    "jsdoc-to-markdown": "^2.0.1"
+    "ava": "^0.23.0",
+    "eslint": "^4.9.0",
+    "eslint-config-oniyi": "^5.0.2",
+    "eslint-plugin-ava": "^4.2.2",
+    "jsdoc-to-markdown": "^3.0.0",
+    "nyc": "^11.2.1",
+    "prettier-eslint-cli": "^4.4.0"
   },
   "repository": "benkroeger/oniyi-object-transform",
   "scripts": {
