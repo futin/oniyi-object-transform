@@ -1,6 +1,6 @@
 {
   "name": "oniyi-object-transform",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "offers simple transformations for object literals",
   "homepage": "https://github.com/benkroeger/oniyi-object-transform#readme",
   "author": "Benjamin Kroeger <benjamin.kroeger@gmail.com>",
