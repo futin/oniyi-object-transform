@@ -64,3 +64,34 @@ test('should return empty object literal when `pick` param is empty array', (t) 
 
   t.is(Object.keys(transformed).length, 0, 'we expect `transformed` to have zero properties');
 });
+
+test('should not ignore undefined source values after mapping', (t) => {
+  const source = {
+    foo: 'bar',
+  };
+
+  const transformed = transform({
+    source,
+    map: {
+      lorem: 'ipsum',
+    },
+  });
+
+  t.true('ipsum' in transformed, 'we expect `ipsum` to be property of `transformed`');
+});
+
+test('should ignore undefined source values after mapping', (t) => {
+  const source = {
+    foo: 'bar',
+  };
+
+  const transformed = transform({
+    source,
+    map: {
+      lorem: 'ipsum',
+    },
+    ignoreUndefined: true,
+  });
+
+  t.false('ipsum' in transformed, 'we expect `ipsum` not to be property of `transformed`');
+});
